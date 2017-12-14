@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>    
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\..\src\csharp\AsyncTests.cs" Link="AsyncTests.cs" />
+    <Compile Include="..\..\..\src\csharp\ExpectedOutcomeAttributes.cs" Link="ExpectedOutcomeAttributes.cs" />
+    <Compile Include="..\..\..\src\csharp\GenericTests.cs" Link="GenericTests.cs" />
+    <Compile Include="..\..\..\src\csharp\InheritedTestTests.cs" Link="InheritedTestTests.cs" />
+    <Compile Include="..\..\..\src\csharp\OneTimeSetUpTests.cs" Link="OneTimeSetUpTests.cs" />
+    <Compile Include="..\..\..\src\csharp\ParameterizedTests.cs" Link="ParameterizedTests.cs" />
+    <Compile Include="..\..\..\src\csharp\SetUpFixtureTests.cs" Link="SetUpFixtureTests.cs" />
+    <Compile Include="..\..\..\src\csharp\SimpleTests.cs" Link="SimpleTests.cs" />
+    <Compile Include="..\..\..\src\csharp\TextOutputTests.cs" Link="TextOutputTests.cs" />
+    <Compile Include="..\..\..\src\csharp\Theories.cs" Link="Theories.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
+    <PackageReference Include="NUnit" Version="3.7.1" />
+  </ItemGroup>
+
+</Project>
