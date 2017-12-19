@@ -12,25 +12,25 @@ Namespace NUnitTestDemo
         End Sub
 
         <Test, ExpectPass>
-        Public Async Sub AsyncTaskTestSucceeds()
+        Public Async Function AsyncTaskTestSucceeds() As Task
             Dim result = Await ReturnOne()
 
             Assert.AreEqual(1, result)
-        End Sub
+        End Function
 
         <Test, ExpectFailure>
-        Public Async Sub AsyncTaskTestFails()
+        Public Async Function AsyncTaskTestFails() As Task
             Dim result = Await ReturnOne()
 
             Assert.AreEqual(2, result)
-        End Sub
+        End Function
 
         <Test, ExpectError>
-        Public Async Sub AsyncTaskTestThrowsException()
+        Public Async Function AsyncTaskTestThrowsException() As Task
             Await ThrowException()
 
             Assert.Fail("Should never get here")
-        End Sub
+        End Function
 
         <TestCase(ExpectedResult:=1), ExpectPass>
         Public Async Function AsyncTaskWithResultSucceeds() As Task(Of Integer)
