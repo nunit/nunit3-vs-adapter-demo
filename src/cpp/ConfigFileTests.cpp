@@ -14,8 +14,8 @@ namespace NUnitTestDemo
         [Test]
         static void ProperConfigFileIsUsed()
         {
-            String^ expectedPath = Path::Combine(TestContext::CurrentContext->TestDirectory, "NUnit3TestDemo.dll.config");
-            Assert::That(expectedPath, Is::EqualTo(AppDomain::CurrentDomain->SetupInformation->ConfigurationFile));
+            String^ expectedPath = Path::Combine(TestContext::CurrentContext->TestDirectory, "CppTestDemo.dll.config");
+            Assert::That(AppDomain::CurrentDomain->SetupInformation->ConfigurationFile, Is::EqualTo(expectedPath));
         }
 
         [Test]

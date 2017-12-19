@@ -11,8 +11,8 @@ namespace NUnitTestDemo
         [Test]
         public static void ProperConfigFileIsUsed()
         {
-            var expectedPath = Path.Combine(TestContext.CurrentContext.TestDirectory, "NUnit3TestDemo.dll.config");
-            Assert.That(expectedPath, Is.EqualTo(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile));
+            var expectedPath = Path.Combine(TestContext.CurrentContext.TestDirectory, "CSharpTestDemo.dll.config");
+            Assert.That(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile, Is.EqualTo(expectedPath));
         }
 
         [Test]

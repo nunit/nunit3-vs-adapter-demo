@@ -25,31 +25,31 @@ var DemoProjects = new DemoProject[] {
 	{
 		Path = VS2015_DIR + "CSharpTestDemo/CSharpTestDemo.csproj", 
 		OutputDir = VS2015_DIR + "CSharpTestDemo/bin/" + configuration + "/",
-		ExpectedResult = "Total tests: 107. Passed: 58. Failed: 25. Skipped: 15."
+		ExpectedResult = "Total tests: 107. Passed: 59. Failed: 24. Skipped: 15."
 	},
 	new DemoProject()
 	{
 		Path = VS2015_DIR + "VbTestDemo/VbTestDemo.vbproj", 
 		OutputDir = VS2015_DIR + "VbTestDemo/bin/" + configuration + "/",
-		ExpectedResult = "Total tests: 107. Passed: 58. Failed: 25. Skipped: 15."
+		ExpectedResult = "Total tests: 107. Passed: 59. Failed: 24. Skipped: 15."
 	},
 	new DemoProject()
 	{
 		Path = VS2015_DIR + "CppTestDemo/CppTestDemo.vcxproj",
 		OutputDir = VS2015_DIR + "CppTestDemo/" + configuration + "/",
-		ExpectedResult = "Total tests: 29. Passed: 13. Failed: 6. Skipped: 8."
+		ExpectedResult = "Total tests: 29. Passed: 14. Failed: 5. Skipped: 8."
 	},
 	new DemoProject()
 	{
-		Path = VS2017_DIR + "NUnitTestDemo/NUnit3TestDemo.csproj",
-		OutputDir = VS2017_DIR + "NUnitTestDemo/bin/" + configuration + "/",
-		ExpectedResult = "Total tests: 107. Passed: 58. Failed: 25. Skipped: 15."
+		Path = VS2017_DIR + "CSharpTestDemo/CSharpTestDemo.csproj",
+		OutputDir = VS2017_DIR + "CSharpTestDemo/bin/" + configuration + "/",
+		ExpectedResult = "Total tests: 107. Passed: 59. Failed: 24. Skipped: 15."
 	},
 	new DemoProject()
 	{
 		Path = VS2017_DIR + "NUnit3CoreTestDemo/NUnit3CoreTestDemo.csproj",
 		OutputDir = VS2017_DIR + "NUnit3CoreTestDemo/bin/" + configuration + "/",
-		ExpectedResult = "Total tests: 107. Passed: 58. Failed: 25. Skipped: 15."
+		ExpectedResult = "Total tests: 107. Passed: 59. Failed: 24. Skipped: 15."
 	}
 };
 

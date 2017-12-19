@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit3TestDemo", "NUnit3TestDemo.csproj", "{03C3F9EC-FB25-46C0-8F0D-17A0C6E60E9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTestDemo", "CSharpTestDemo.csproj", "{03C3F9EC-FB25-46C0-8F0D-17A0C6E60E9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

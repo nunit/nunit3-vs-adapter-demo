@@ -8,8 +8,8 @@ Namespace NUnitTestDemo
     Public Class ConfigFileTests
         <Test>
         Public Shared Sub ProperConfigFileIsUsed()
-            Dim expectedPath = Path.Combine(TestContext.CurrentContext.TestDirectory, "NUnit3TestDemo.dll.config")
-            Assert.That(expectedPath, Iz.EqualTo(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile))
+            Dim expectedPath = Path.Combine(TestContext.CurrentContext.TestDirectory, "VbTestDemo.dll.config")
+            Assert.That(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile, Iz.EqualTo(expectedPath))
         End Sub
 
         <Test>
