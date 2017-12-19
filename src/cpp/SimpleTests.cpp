@@ -110,7 +110,7 @@ namespace NUnitTestDemo
 
 #if !NETCOREAPP1_1
         // Since we only run under .NET, test is always excluded
-        [Test, ExpectSkip, Platform("Exclude=\"NET\"")]
+        [Test, ExpectSkip, Platform(Exclude="NET")]
         void TestIsSkipped_Platform()
         {
         }
