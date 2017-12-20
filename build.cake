@@ -1,3 +1,5 @@
+#tool nuget:?package=vswhere
+
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
 //////////////////////////////////////////////////////////////////////
@@ -18,6 +20,10 @@ var NET35_ADAPTER_PATH = TOOLS_DIR + "NUnit3TestAdapter/build/net35/";
 
 // Version of the Adapter to Use
 var ADAPTER_VERSION = "3.9.0";
+
+// Get path to VSTest
+var VSTEST_CONSOLE  = VSWhereLatest()?.CombineWithFilePath(
+	"./Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe");
 
 // Specify all the demo projects
 var DemoProjects = new DemoProject[] {
@@ -152,7 +158,7 @@ Task("RunDemos")
 				IEnumerable<string> redirectedErrorOutput;
 
 				int result = StartProcess(
-					"vstest.console.exe", 
+					VSTEST_CONSOLE, 
 					new ProcessSettings()
 					{
 						Arguments = $"{proj.TestAssembly} /TestAdapterPath:{NET35_ADAPTER_PATH}",
