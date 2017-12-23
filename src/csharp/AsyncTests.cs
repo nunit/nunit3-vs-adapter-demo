@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-#if NETCOREAPP1_1
+#if NETCOREAPP1_1 || NETCOREAPP2_0
 namespace NUnitCoreTestDemo
 #else
 namespace NUnitTestDemo
