@@ -27,14 +27,16 @@ namespace NUnitTestDemo
         [SetUp]
         public void CreateList()
         {
-            this.list = new TList();
+            list = new TList();
         }
 
         [Test]
         public void CanAddToList()
         {
-            list.Add(1); list.Add(2); list.Add(3);
-            Assert.AreEqual(3, list.Count);
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            Assert.That(list.Count,Is.EqualTo(3));
         }
     }
 }
