@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Text;
 using NUnit.Framework;
 using System.Diagnostics;
 
-#if NETCOREAPP1_1 || NETCOREAPP2_0
-namespace NUnitCoreTestDemo
-#else
+
 namespace NUnitTestDemo
-#endif
 {
     [ExpectPass]
     public class TextOutputTests

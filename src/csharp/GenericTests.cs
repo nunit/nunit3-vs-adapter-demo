@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 using NUnit.Framework;
 
-#if NETCOREAPP1_1 || NETCOREAPP2_0
-namespace NUnitCoreTestDemo
-#else
+
 namespace NUnitTestDemo
-#endif
 {
     [TestFixture(typeof(int))]
     public class GenericTests<T>

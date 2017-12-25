@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnit3Core2TestDemo", "NUnit3Core2TestDemo.csproj", "{38F3367C-274D-4B31-9D38-69F949000A61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCore1TestDemo", "CSharpCore1TestDemo.csproj", "{38F3367C-274D-4B31-9D38-69F949000A61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {35AFB295-46B2-49DC-A0B7-952EF6612E14}
+		SolutionGuid = {35AFB295-46B2-49DC-A0B7-952EF6612E13}
 	EndGlobalSection
 EndGlobal
