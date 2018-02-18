@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using NUnit.Framework;
-using NUnit.Framework.Internal;
-using NUnit.Framework.Interfaces;
 
 #if NETCOREAPP1_1
 namespace NUnitCoreTestDemo
@@ -120,6 +116,11 @@ namespace NUnitTestDemo
 
         [Test]
         public void TestCaseWithRandomParameter([Random(1)] int x)
+        {
+        }
+
+        [TestCase(TestName = "{c.m}")]
+        public void TestCaseWithRandomParameterWithFixedNaming([Random(1)] int x)
         {
         }
 
