@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTestDemo", "CSharpTestDemo.csproj", "{03C3F9EC-FB25-46C0-8F0D-17A0C6E60E9F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{262E8424-2C0D-49ED-814B-D0F166793A0A}"
+	ProjectSection(SolutionItems) = preProject
+		Simple.runsettings = Simple.runsettings
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
