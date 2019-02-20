@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-#if NETCOREAPP1_1
-namespace NUnitCoreTestDemo.SetUpFixture
-#else
+
 namespace NUnitTestDemo.SetUpFixture
-#endif
 {
     [SetUpFixture]
     public class SetUpFixture

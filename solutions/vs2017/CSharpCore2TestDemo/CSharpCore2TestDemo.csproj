@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>    
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <LagVersion>latest</LagVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\..\src\csharp\AsyncTests.cs" Link="AsyncTests.cs" />
+    <Compile Include="..\..\..\src\csharp\ExpectedOutcomeAttributes.cs" Link="ExpectedOutcomeAttributes.cs" />
+    <Compile Include="..\..\..\src\csharp\GenericTests.cs" Link="GenericTests.cs" />
+    <Compile Include="..\..\..\src\csharp\InheritedTestTests.cs" Link="InheritedTestTests.cs" />
+    <Compile Include="..\..\..\src\csharp\OneTimeSetUpTests.cs" Link="OneTimeSetUpTests.cs" />
+    <Compile Include="..\..\..\src\csharp\ParameterizedTests.cs" Link="ParameterizedTests.cs" />
+    <Compile Include="..\..\..\src\csharp\SetUpFixtureTests.cs" Link="SetUpFixtureTests.cs" />
+    <Compile Include="..\..\..\src\csharp\SimpleTests.cs" Link="SimpleTests.cs" />
+    <Compile Include="..\..\..\src\csharp\TextOutputTests.cs" Link="TextOutputTests.cs" />
+    <Compile Include="..\..\..\src\csharp\Theories.cs" Link="Theories.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="NUnit" Version="3.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
+  </ItemGroup>
+
+</Project>

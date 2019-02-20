@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-#if NETCOREAPP1_1
-namespace NUnitCoreTestDemo
-#else
+
 namespace NUnitTestDemo
-#endif
 {
     public class Theories
     {
         [Datapoints]
-        int[] data = new int[] { 0, 1, 42 };
+        int[] data = { 0, 1, 42 };
 
         [Theory, ExpectPass]
         public void Theory_AllCasesSucceed(int a, int b)
