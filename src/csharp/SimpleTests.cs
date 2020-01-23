@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-#if NETCOREAPP1_1
+#if NETCOREAPP1_1 || NETCOREAPP2_2
 namespace NUnitCoreTestDemo
 #else
 namespace NUnitTestDemo
@@ -107,7 +107,7 @@ namespace NUnitTestDemo
             Assert.Ignore("Ignoring this test deliberately");
         }
 
-#if !NETCOREAPP1_1
+#if !NETCOREAPP1_1 && !NETCOREAPP2_2
         // Since we only run under .NET, test is always excluded
         [Test, ExpectSkip, Platform("Exclude=\"NET\"")]
         public void TestIsSkipped_Platform()

@@ -6,7 +6,7 @@ using System.Text;
 using NUnit.Framework;
 using System.Diagnostics;
 
-#if NETCOREAPP1_1
+#if NETCOREAPP1_1 || NETCOREAPP2_2
 namespace NUnitCoreTestDemo
 #else
 namespace NUnitTestDemo
@@ -68,7 +68,7 @@ namespace NUnitTestDemo
         [Test, Description("Displays various settings for verification")]
         public void DisplayTestSettings()
         {
-#if NETCOREAPP1_1
+#if NETCOREAPP1_1  || NETCOREAPP2_2
             Console.WriteLine("CurrentDirectory={0}", Directory.GetCurrentDirectory());
             Console.WriteLine("Location={0}", typeof(TextOutputTests).GetTypeInfo().Assembly.Location);
 #else

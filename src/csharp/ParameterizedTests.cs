@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-#if NETCOREAPP1_1
+#if NETCOREAPP1_1 || NETCOREAPP2_2
 namespace NUnitCoreTestDemo
 #else
 namespace NUnitTestDemo
@@ -79,7 +79,7 @@ namespace NUnitTestDemo
             Assert.Ignore("Ignoring this test case");
         }
 
-#if !NETCOREAPP1_1
+#if !NETCOREAPP1_1  && !NETCOREAPP2_2
         [TestCase(31, 11, ExcludePlatform="NET"), ExpectSkip]
         public void TestCaseIsSkipped_Property(int a, int b)
         {
