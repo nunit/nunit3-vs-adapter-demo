@@ -1,12 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTestDemo", "CSharpTestDemo.csproj", "{03C3F9EC-FB25-46C0-8F0D-17A0C6E60E9F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{262E8424-2C0D-49ED-814B-D0F166793A0A}"
 	ProjectSection(SolutionItems) = preProject
+		Dump.runsettings = Dump.runsettings
 		Simple.runsettings = Simple.runsettings
 	EndProjectSection
 EndProject

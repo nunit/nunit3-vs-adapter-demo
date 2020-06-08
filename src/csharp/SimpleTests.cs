@@ -9,6 +9,7 @@ namespace NUnitTestDemo
 {
     public class SimpleTests
     {
+        [Category("Whatever")]
         [Test, ExpectPass]
         public void TestSucceeds()
         {

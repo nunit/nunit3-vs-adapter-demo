@@ -44,6 +44,7 @@
     -->
   <NUnit>
     <Verbosity>-1</Verbosity>
+    <DumpXmlTestResults>true</DumpXmlTestResults>
   </NUnit>
 
 </RunSettings>
